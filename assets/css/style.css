@@ -127,6 +127,7 @@ table {
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.5) #333333;
   font-family: "Comfortaa", sans-serif;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
@@ -338,8 +339,14 @@ template {
   display: none; }
 
 header, main, main .login-form form .form-header .login-button-wrapper .login-btn, main .login-form form .form-header .register-button-wrapper .register-btn, main .login-form form .form-body .title, main .login-form form .form-body .input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 header {
@@ -367,6 +374,8 @@ main {
       background-color: #fff; }
       main .login-form form .form-header {
         padding: 1px;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
         height: 50px;
         border-radius: 8px;
@@ -406,6 +415,8 @@ main {
         margin-top: 25px;
         width: 100%; }
         main .login-form form .form-body .title {
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
           justify-content: flex-start;
           height: 30px;
           color: #646464;
@@ -414,6 +425,8 @@ main {
           margin-bottom: 1rem; }
           main .login-form form .form-body .title::after {
             margin-left: 1rem;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
             flex: 1;
             height: 1px;
             content: "";
@@ -471,10 +484,14 @@ main {
             position: absolute;
             right: 15px;
             top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
             main .login-form form .form-body .input-wrapper #showPassword img {
+              -webkit-filter: invert(26%) sepia(0%) saturate(0%) hue-rotate(333deg) brightness(97%) contrast(87%);
               filter: invert(26%) sepia(0%) saturate(0%) hue-rotate(333deg) brightness(97%) contrast(87%); }
             main .login-form form .form-body .input-wrapper #showPassword .error-img {
+              -webkit-filter: invert(56%) sepia(86%) saturate(4714%) hue-rotate(333deg) brightness(97%) contrast(107%);
               filter: invert(56%) sepia(86%) saturate(4714%) hue-rotate(333deg) brightness(97%) contrast(107%); }
       main .login-form form .form-footer {
         margin-top: 25px; }
