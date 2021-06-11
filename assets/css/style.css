@@ -600,4 +600,36 @@ main {
             font-size: 0.9rem;
             line-height: 1.5; }
 
+@media screen and (max-width: 768px) {
+  header {
+    display: none; }
+
+  main {
+    width: 100%;
+    height: 100%; }
+    main .login-form {
+      border: 0px solid #e5e5e5;
+      width: 100%;
+      height: 100%;
+      padding: 1rem; }
+      main .login-form form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        main .login-form form .form-header {
+          max-width: 500px;
+          width: 100%; }
+          main .login-form form .form-header .login-button-wrapper {
+            width: 100%;
+            height: 100%; }
+          main .login-form form .form-header .register-button-wrapper {
+            width: 100%;
+            height: 100%; }
+        main .login-form form .form-body {
+          max-width: 500px;
+          width: 100%; } }
+
 /*# sourceMappingURL=style.css.map */
